@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+</head>
+
+<body class="regform">
+    <div class="regform__window">
+        <!-- <header class="regform__header">
+            <h1>Вход</h1>
+        </header> -->
+        <form method="post" class="regform__form">
+            <h1>Вход</h1>
+            <label for="regform__input-email" class="regform__label">Email</label>
+            <input type="email" class="regform__input-email regform__input" placeholder="Введите адрес почты">
+            <label for="regform__input-password" class="regform__label">Пароль</label>
+            <input type="password" class="regform__input-password regform__input" placeholder="Введите пароль">
+         <div class="check">
+            <label>
+                <input type="checkbox" class="check__real">
+                <span class="check__custom"></span>Я согласен получать
+                обновления на почту
+            </label>
+
+         </div>
+        
+            <div>
+                <input class="submit" value="Войти" type="submit">
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
