@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+table {
+    position: relative;
+    border-collapse: collapse;
+    top: 250px;
+}
+
+
+td {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    text-align: center;
+    position: relative;
+
+}
+
+td label {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+td input {
+    position: absolute;
+    z-index: -1;
+    visibility: hidden;
+}
+
+td i {
+    display: none;
+    color: red;
+    font-size: 35px;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+td i:before {
+    content: '♘';
+}
+
+td input:checked + i {
+    display: block;
+}
